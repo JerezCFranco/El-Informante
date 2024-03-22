@@ -39,12 +39,10 @@
 
 .informante-white {
   color: black;
-  border: solid 1px black;
 }
 
 .informante-black {
   color: rgb(255, 255, 255);
-  border: solid 1px rgb(255, 255, 255);
 }
 
 .dropdown-item:hover {
