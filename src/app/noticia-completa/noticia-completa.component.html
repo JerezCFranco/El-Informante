@@ -1,0 +1,11 @@
+<div class="inicio" [ngClass]="{'inicio-black' : estadoModoNocturno()}">
+    <div *ngIf="noticia" style="font-family: Arial, Helvetica, sans-serif">
+        <p>{{ noticia.categoria }}</p>
+        <h2>{{ noticia.titulo }}</h2>
+        <img style="margin: 20px 0 20px 0;" [src]="noticia.imagenUrl" alt="{{ noticia.titulo }}">
+        <p>{{ noticia.descripcion }}</p> 
+    </div>
+    <div *ngIf="!noticia">
+        <p>No se encontró la noticia.</p>
+    </div>
+</div>

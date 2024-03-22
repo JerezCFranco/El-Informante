@@ -1,0 +1,22 @@
+<h1>Formulario de Noticias</h1>
+<div [ngClass]="{'form-black': estadoModoNocturno()}">
+    <form id="formulario-noticias" (ngSubmit)="submitForm($event)">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+        <br>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" required></textarea>
+        <br>
+
+        <label for="imagenUrl">Seleccionar imagen:</label>
+        <input type="text" id="imagenUrl" name="imagenUrl" required>
+        <br>
+
+        <label for="categoria">Categoría:</label>
+        <input type="text" id="categoria" name="categoria" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</div>

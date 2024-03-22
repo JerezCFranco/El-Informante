@@ -1,0 +1,25 @@
+<div class="row inicio">
+    <ng-container *ngFor="let noticia of noticias.slice(0, 24); let i = index;">
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="h-100">
+                <div class="card h-100" [ngClass]="{'card-black': estadoModoNocturno()}">
+                    <img [src]="noticia.imagenUrl" class="card-img-top img-fluid" (click)="verDetalle(noticia.id)"
+                        alt="{{ noticia.titulo }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ noticia.titulo }}</h5>
+                        <p class="card-text">{{ noticia.descripcionCorta }}</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">{{ noticia.categoria }}</li>
+                    </ul>
+                    <div class="card-body boton-detalle">
+                        <button class="btn" (click)="verDetalle(noticia.id)" [ngClass]="estadoModoNocturno() ? 'btn-light' : 'btn-dark'"
+                        >Ver Noticia</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="(i + 1) % 2 === 0 && (i + 1) % 3 !== 0" class="w-100 d-lg-none"></div>
+        <div *ngIf="(i + 1) % 3 === 0" class="w-100 d-none d-lg-block"></div>
+    </ng-container>
+</div>

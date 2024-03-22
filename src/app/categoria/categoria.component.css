@@ -1,0 +1,42 @@
+.inicio {
+  margin-top: 100px;
+  padding: 0 20px 0 20px;
+}
+
+a {
+  font-size: 15px;
+}
+
+li {
+  font-size: 13px;
+}
+
+img {
+  cursor: pointer;
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.card-black {
+  color: white;
+  background-color: rgba(40, 40, 40);
+}
+
+.card-black li {
+  color: inherit;
+  background-color: rgba(40, 40, 40);
+}
+
+.boton-detalle {
+  max-height: 70px;
+}
+
+.boton-detalle button {
+  width: 100%;
+  height: 100%;
+}

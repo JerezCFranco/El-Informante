@@ -1,0 +1,14 @@
+#formulario-noticias {
+  display: grid;
+  margin-top: 30px;
+  padding: 20px 20% 20px 20%;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.form-black {
+  color: white;
+}
+
